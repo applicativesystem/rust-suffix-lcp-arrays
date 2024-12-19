@@ -1,10 +1,8 @@
 # rust-lcp-arrays
 
- - rust lcp arrays 
- - kasai algorithm says that use a inverse suffix tree but that is cost consuming.Instead, i implemented a string compression way so that it estimates the proportion of the
-match based on the ith offset for the i+1 offset.
+ - rust lcp arrays. kasai algorithm says that use a inverse suffix tree but that is cost consuming. Instead, i implemented a string compression way so that it estimates the proportion of the
+match based on the ith offset for the i+1 offset. Also dropped two offset, as the string lower than the pre-string will not have a suffix match thus enabling faster search.
  - general note: Incase of Golang and RUST, please see the last commit message and if it says compiled binary then it is completed or else still in development version.
-  
 
  ```
  cargo build 
